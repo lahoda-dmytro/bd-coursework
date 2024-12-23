@@ -242,6 +242,7 @@
     <Compile Include="Models\OrderItems.cs" />
     <Compile Include="Converters\StringToListConverter.cs" />
     <Compile Include="Models\ProductSize.cs" />
+    <Compile Include="Models\tovary_sizes.cs" />
     <Compile Include="UserWindow.xaml.cs">
       <DependentUpon>UserWindow.xaml</DependentUpon>
     </Compile>

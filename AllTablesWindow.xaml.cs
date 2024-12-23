@@ -5,6 +5,7 @@ using System.Windows;
 using Microsoft.EntityFrameworkCore;
 using WebStore.Models;
 using WebStore;
+using System.Windows.Controls;
 
 namespace OnlineStoreApp
 {
@@ -145,6 +146,36 @@ namespace OnlineStoreApp
             {
                 context.categories.Add(newCategory);
                 context.SaveChanges();
+            }
+        }
+
+        private void CategoriesDataGrid_CellEditEnding(object sender, DataGridCellEditEndingEventArgs e)
+        {
+            if (e.Column.Header.ToString() == "name")
+            {
+                var editedCategory = e.Row.Item as categories;
+                if (editedCategory != null)
+                {
+                    using (var context = new AppDbContext())
+                    {
+                        context.categories.Update(editedCategory);
+                        context.SaveChanges();
+                    }
+                }
+            }
+        }
+
+        private void RemoveCategory_Click(object sender, RoutedEventArgs e)
+        {
+            if (CategoriesDataGrid.SelectedItem is categories selectedCategory)
+            {
+                Categories.Remove(selectedCategory);
+
+                using (var context = new AppDbContext())
+                {
+                    context.categories.Remove(selectedCategory);
+                    context.SaveChanges();
+                }
             }
         }
 

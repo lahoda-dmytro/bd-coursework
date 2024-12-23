@@ -35,7 +35,7 @@ namespace OnlineStoreApp
 
         private void UpdateTotalPrice()
         {
-            decimal total = Cart.Sum(item => item.price * item.quantity); // Врахування кількості товару
+            decimal total = Cart.Sum(item => item.price * item.quantity);
             TotalPriceText.Text = total.ToString("C", System.Globalization.CultureInfo.CreateSpecificCulture("en-US"));
         }
 
@@ -99,7 +99,6 @@ namespace OnlineStoreApp
             MessageBox.Show("Замовлення успішно оформлено!", "Успіх", MessageBoxButton.OK, MessageBoxImage.Information);
             this.Close();
         }
-
 
     }
 }

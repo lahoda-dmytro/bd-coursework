@@ -12,6 +12,7 @@ namespace OnlineStoreApp
     public partial class UserWindow : Window
     {
         public ObservableCollection<tovary> Products { get; set; }
+        public ObservableCollection<tovary> FilteredProducts { get; set; }
         public ObservableCollection<tovary> Cart { get; set; }
 
         public UserWindow()
@@ -26,17 +27,35 @@ namespace OnlineStoreApp
         {
             using (var context = new AppDbContext())
             {
-                Products = new ObservableCollection<tovary>(context.tovary.ToList().Select(p => new tovary
+                Products = new ObservableCollection<tovary>(context.tovary
+                    .Include(t => t.TovarSizes)
+                    .ThenInclude(ts => ts.Size)
+                    .ToList().Select(p => new tovary
+                    {
+                        item_id = p.item_id,
+                        name = p.name ?? "Unknown",
+                        price = p.price,
+                        photo_url = p.photo_url ?? string.Empty,
+                        description = p.description ?? string.Empty,
+                        category_id = p.category_id,
+                        quantity = p.quantity,
+                        sizes = string.Join(", ", p.TovarSizes.Select(ts => ts.Size.size)) // З'єднання розмірів у строку
+                    }).ToList());
+                FilteredProducts = new ObservableCollection<tovary>(Products);
+                ProductsItemsControl.ItemsSource = FilteredProducts;
+            }
+        }
+
+        private void SearchTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string filter = SearchTextBox.Text.ToLower();
+            FilteredProducts.Clear();
+            foreach (var product in Products)
+            {
+                if (product.name.ToLower().Contains(filter) || product.description.ToLower().Contains(filter))
                 {
-                    item_id = p.item_id,
-                    name = p.name ?? "Unknown", // Обробка NULL значення
-                    price = p.price, // Обробка NULL значення
-                    photo_url = p.photo_url ?? string.Empty, // Обробка NULL значення
-                    description = p.description ?? string.Empty, // Обробка NULL значення
-                    category_id = p.category_id,
-                    quantity = p.quantity // Обробка NULL значення
-                }).ToList());
-                ProductsItemsControl.ItemsSource = Products;
+                    FilteredProducts.Add(product);
+                }
             }
         }
 
@@ -81,13 +100,22 @@ namespace OnlineStoreApp
         {
             CartItemsControl.ItemsSource = null;
             CartItemsControl.ItemsSource = Cart;
-            TotalPrice.Text = Cart.Sum(item => item.price * item.quantity).ToString("C"); // Врахування кількості товару
+            TotalPrice.Text = Cart.Sum(item => item.price * item.quantity).ToString("C");
         }
 
         private void Checkout_Click(object sender, RoutedEventArgs e)
         {
             var checkoutWindow = new CheckoutWindow(Cart);
             checkoutWindow.Show();
+            Cart.Clear(); // Очищення кошика після підтвердження замовлення
+            UpdateCart();
+        }
+
+        private void Logout_Click(object sender, RoutedEventArgs e)
+        {
+            var loginWindow = new LoginWindow();
+            loginWindow.Show();
+            this.Close();
         }
     }
 }

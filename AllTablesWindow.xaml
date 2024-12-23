@@ -32,14 +32,16 @@
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="10">
                         <Button Content="Confirm Order" Click="ConfirmOrder_Click" Margin="5"/>
                         <Button Content="Remove Order" Click="RemoveOrder_Click" Margin="5"/>
+                        <Button Content="Save Changes" Click="SaveChanges_Click" Margin="5"/>
                     </StackPanel>
                 </StackPanel>
             </TabItem>
             <TabItem Header="Categories">
                 <StackPanel>
-                    <DataGrid x:Name="CategoriesDataGrid" AutoGenerateColumns="True" />
+                    <DataGrid x:Name="CategoriesDataGrid" AutoGenerateColumns="True" CellEditEnding="CategoriesDataGrid_CellEditEnding" />
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="10">
                         <Button Content="Add Category" Click="AddCategory_Click" Margin="5"/>
+                        <Button Content="Remove Category" Click="RemoveCategory_Click" Margin="5"/>
                     </StackPanel>
                 </StackPanel>
             </TabItem>

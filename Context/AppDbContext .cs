@@ -17,6 +17,7 @@ namespace WebStore
         public DbSet<sklad> sklad { get; set; }
         public DbSet<koshik> koshik { get; set; }
         public DbSet<zamovlennya> zamovlennya { get; set; }
+        public DbSet<tovary_sizes> tovary_sizes { get; set; } // Додано DbSet для tovary_sizes
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -29,6 +30,9 @@ namespace WebStore
                 .HasOne(oi => oi.Order)
                 .WithMany(o => o.OrderItems)
                 .HasForeignKey(oi => oi.order_id);
+
+            modelBuilder.Entity<tovary_sizes>()
+                .HasKey(ts => new { ts.item_id, ts.size_id }); // Налаштування складного ключа
 
             base.OnModelCreating(modelBuilder);
         }
