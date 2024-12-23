@@ -14,6 +14,7 @@ namespace OnlineStoreApp
         public ObservableCollection<Users> Users { get; set; }
         public ObservableCollection<tovary> Products { get; set; }
         public ObservableCollection<Orders> Orders { get; set; }
+        public ObservableCollection<OrderItems> OrderItems { get; set; }
         public ObservableCollection<categories> Categories { get; set; }
 
         public AllTablesWindow()
@@ -31,6 +32,7 @@ namespace OnlineStoreApp
                 Products = new ObservableCollection<tovary>(context.tovary.ToList());
                 Orders = new ObservableCollection<Orders>(context.Orders
                     .Include(o => o.OrderItems)
+                    .ThenInclude(oi => oi.Tovar)
                     .Select(o => new Orders
                     {
                         order_id = o.order_id,
@@ -42,7 +44,7 @@ namespace OnlineStoreApp
                         note = o.note ?? string.Empty,
                         order_date = o.order_date,
                         total_price = o.total_price,
-                        status = o.status ?? string.Empty, 
+                        status = o.status ?? string.Empty,
                         confirmed = o.confirmed,
                         OrderItems = o.OrderItems.Select(oi => new OrderItems
                         {
@@ -50,7 +52,18 @@ namespace OnlineStoreApp
                             order_id = oi.order_id,
                             item_id = oi.item_id,
                             quantity = oi.quantity,
-                            price = oi.price
+                            price = oi.price,
+                            Tovar = new tovary
+                            {
+                                item_id = oi.Tovar.item_id,
+                                name = oi.Tovar.name,
+                                size_s = oi.Tovar.size_s,
+                                size_m = oi.Tovar.size_m,
+                                size_l = oi.Tovar.size_l
+                            },
+                            size_s = oi.size_s,
+                            size_m = oi.size_m,
+                            size_l = oi.size_l
                         }).ToList()
                     }).ToList());
                 Categories = new ObservableCollection<categories>(context.categories.ToList());
@@ -74,8 +87,7 @@ namespace OnlineStoreApp
                 quantity = 0,
                 size_s = 0,
                 size_m = 0,
-                size_l = 0,
-              
+                size_l = 0
             };
 
             Products.Add(newProduct);
@@ -222,6 +234,29 @@ namespace OnlineStoreApp
                         }
                     }
 
+                    foreach (var order in Orders)
+                    {
+                        if (context.Orders.Any(o => o.order_id == order.order_id))
+                        {
+                            context.Entry(order).State = EntityState.Modified;
+                            foreach (var orderItem in order.OrderItems)
+                            {
+                                if (context.OrderItems.Any(oi => oi.id == orderItem.id))
+                                {
+                                    context.Entry(orderItem).State = EntityState.Modified;
+                                }
+                                else
+                                {
+                                    context.OrderItems.Add(orderItem);
+                                }
+                            }
+                        }
+                        else
+                        {
+                            context.Orders.Add(order);
+                        }
+                    }
+
                     context.SaveChanges();
                     MessageBox.Show("Changes saved to the database.");
                 }
@@ -231,7 +266,6 @@ namespace OnlineStoreApp
                 MessageBox.Show($"An error occurred while saving changes: {ex.Message}");
             }
         }
-
 
         private void SaveProductSizesChanges_Click(object sender, RoutedEventArgs e)
         {

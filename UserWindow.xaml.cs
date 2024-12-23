@@ -107,6 +107,7 @@ namespace OnlineStoreApp
             }
         }
 
+
         private void RemoveFromCart_Click(object sender, RoutedEventArgs e)
         {
             if (sender is Button button && button.Tag is koshik selectedCartItem)

@@ -23,10 +23,32 @@
             </TabItem>
             <TabItem Header="Orders">
                 <StackPanel>
-                    <DataGrid x:Name="OrdersDataGrid" AutoGenerateColumns="True">
+                    <DataGrid x:Name="OrdersDataGrid" AutoGenerateColumns="False">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Order ID" Binding="{Binding order_id}"/>
+                            <DataGridTextColumn Header="User ID" Binding="{Binding user_id}"/>
+                            <DataGridTextColumn Header="Address" Binding="{Binding address}"/>
+                            <DataGridTextColumn Header="Phone" Binding="{Binding phone}"/>
+                            <DataGridTextColumn Header="Email" Binding="{Binding email}"/>
+                            <DataGridTextColumn Header="Delivery Branch" Binding="{Binding delivery_branch}"/>
+                            <DataGridTextColumn Header="Note" Binding="{Binding note}"/>
+                            <DataGridTextColumn Header="Order Date" Binding="{Binding order_date}"/>
+                            <DataGridTextColumn Header="Total Price" Binding="{Binding total_price, StringFormat=C}"/>
+                            <DataGridTextColumn Header="Status" Binding="{Binding status}"/>
+                        </DataGrid.Columns>
                         <DataGrid.RowDetailsTemplate>
                             <DataTemplate>
-                                <DataGrid ItemsSource="{Binding OrderItems}" AutoGenerateColumns="True" />
+                                <DataGrid ItemsSource="{Binding OrderItems}" AutoGenerateColumns="False">
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Header="Item ID" Binding="{Binding item_id}"/>
+                                        <DataGridTextColumn Header="Item Name" Binding="{Binding Tovar.name}"/>
+                                        <DataGridTextColumn Header="Quantity" Binding="{Binding quantity}"/>
+                                        <DataGridTextColumn Header="Price" Binding="{Binding price, StringFormat=C}"/>
+                                        <DataGridTextColumn Header="Size S" Binding="{Binding size_s}"/>
+                                        <DataGridTextColumn Header="Size M" Binding="{Binding size_m}"/>
+                                        <DataGridTextColumn Header="Size L" Binding="{Binding size_l}"/>
+                                    </DataGrid.Columns>
+                                </DataGrid>
                             </DataTemplate>
                         </DataGrid.RowDetailsTemplate>
                     </DataGrid>
