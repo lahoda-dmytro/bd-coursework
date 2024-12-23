@@ -1,6 +1,8 @@
-﻿using System.Linq;
+﻿using Microsoft.EntityFrameworkCore;
+using System.Linq;
 using System.Windows;
 using WebStore;
+using WebStore.Models;
 
 namespace OnlineStoreApp
 {
@@ -11,17 +13,18 @@ namespace OnlineStoreApp
             InitializeComponent();
         }
 
-        private void LoginAsUser_Click(object sender, RoutedEventArgs e)
+        private void LoginAsUserButton_Click(object sender, RoutedEventArgs e)
         {
-            var username = UsernameTextBox.Text;
-            var password = PasswordTextBox.Password;
+            string username = UsernameTextBox.Text;
+            string password = PasswordTextBox.Password;
 
             using (var context = new AppDbContext())
             {
-                var user = context.Users.SingleOrDefault(u => u.Username == username && u.Password == password);
+                var user = context.Users.SingleOrDefault(u => u.username == username && u.password == password);
+
                 if (user != null)
                 {
-                    var userWindow = new UserWindow();
+                    var userWindow = new UserWindow(user.id); // Передача ID користувача
                     userWindow.Show();
                     this.Close();
                 }
@@ -32,23 +35,24 @@ namespace OnlineStoreApp
             }
         }
 
-        private void LoginAsAdmin_Click(object sender, RoutedEventArgs e)
+        private void LoginAsAdminButton_Click(object sender, RoutedEventArgs e)
         {
-            var username = UsernameTextBox.Text;
-            var password = PasswordTextBox.Password;
+            string username = UsernameTextBox.Text;
+            string password = PasswordTextBox.Password;
 
             using (var context = new AppDbContext())
             {
-                var admin = context.admin_account.SingleOrDefault(a => a.username == username && a.password == password);
-                if (admin != null)
+                var adminAccount = context.admin_account.SingleOrDefault(a => a.username == username && a.password == password);
+
+                if (adminAccount != null)
                 {
-                    var allTablesWindow = new AllTablesWindow();
+                    var allTablesWindow = new AllTablesWindow(); // Відкриття вікна з усіма таблицями
                     allTablesWindow.Show();
                     this.Close();
                 }
                 else
                 {
-                    MessageBox.Show("Invalid admin username or password.");
+                    MessageBox.Show("Invalid admin credentials.");
                 }
             }
         }

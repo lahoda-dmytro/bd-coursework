@@ -20,6 +20,9 @@
         <!-- Кнопка Logout -->
         <Button Content="Logout" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right" Margin="10" Click="Logout_Click"/>
 
+        <!-- Вибір категорії -->
+        <ComboBox x:Name="CategoriesComboBox" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Margin="10" Width="200" SelectionChanged="CategoriesComboBox_SelectionChanged"/>
+
         <!-- Список товарів -->
         <ScrollViewer Grid.Column="0" Grid.Row="1" VerticalScrollBarVisibility="Auto">
             <ItemsControl x:Name="ProductsItemsControl">
@@ -35,7 +38,7 @@
                                 <Image Source="{Binding photo_url}" Width="150" Height="150" Margin="0,0,0,10"/>
                                 <TextBlock Text="{Binding name}" FontWeight="Bold" FontSize="16"/>
                                 <TextBlock Text="{Binding price, StringFormat=C}" FontWeight="Bold" Margin="0,5,0,5"/>
-                                <TextBlock Text="{Binding sizes}" FontWeight="Bold" Margin="0,5,0,5"/>
+                                <ComboBox ItemsSource="{Binding AvailableSizes}" SelectedItem="{Binding SelectedSize}" Width="150" Margin="0,5,0,5"/>
                                 <Button Content="Add to Cart" Click="AddToCart_Click" Tag="{Binding}"/>
                             </StackPanel>
                         </Border>
@@ -51,9 +54,10 @@
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal" Margin="5">
-                            <TextBlock Text="{Binding name}" Width="150"/>
+                            <TextBlock Text="{Binding Tovar.name}" Width="150"/>
                             <TextBlock Text="{Binding price, StringFormat=C}" Width="50"/>
-                            <TextBlock Text="(x{Binding quantity})" Width="50"/>
+                            <TextBlock Text="({Binding size_selected})" Width="50"/>
+                            <TextBlock Text="x{Binding quantity}" Width="50"/>
                             <Button Content="Remove" Click="RemoveFromCart_Click" Tag="{Binding}" Margin="10,0,0,0"/>
                         </StackPanel>
                     </DataTemplate>

@@ -3,56 +3,16 @@
   "WorkspaceRootPath": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\context\\appdbcontext .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:context\\appdbcontext .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|d:\\!01 labs\\!02 course\\database_onlinestore\\webstore\\userwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:userwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|d:\\!01 labs\\!02 course\\database_onlinestore\\webstore\\models\\tovary_sizes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:models\\tovary_sizes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\models\\tovary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:models\\tovary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\models\\sizes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:models\\sizes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\alltableswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:alltableswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\alltableswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:alltableswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\checkoutwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:checkoutwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\userwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:userwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\converters\\quantitytobooleanconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:converters\\quantitytobooleanconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\cartwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:cartwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\cartwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -63,76 +23,100 @@
       "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:checkoutwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\cartwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:cartwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\converters\\stringtolistconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:converters\\stringtolistconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\models\\productsize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:models\\productsize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\models\\orderitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:models\\orderitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\alltableswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:alltableswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\alltableswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:alltableswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\models\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:models\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\models\\zamovlennya.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:models\\zamovlennya.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\models\\koshik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:models\\koshik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\models\\sklad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:models\\sklad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\models\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:models\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\models\\delivery_services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:models\\delivery_services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\models\\admin_account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:models\\admin_account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\models\\admin_log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:models\\admin_log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\models\\admin_account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:models\\admin_account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\models\\zamovlennya.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:models\\zamovlennya.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\models\\tovary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:models\\tovary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\models\\koshik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:models\\koshik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\models\\delivery_services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:models\\delivery_services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\models\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:models\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\context\\appdbcontext .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:context\\appdbcontext .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\converters\\quantitytobooleanconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:converters\\quantitytobooleanconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\converters\\stringtolistconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:converters\\stringtolistconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\userwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:userwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -142,7 +126,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -150,106 +134,167 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AllTablesWindow.xaml.cs",
-              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\AllTablesWindow.xaml.cs",
-              "RelativeDocumentMoniker": "AllTablesWindow.xaml.cs",
-              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\AllTablesWindow.xaml.cs",
-              "RelativeToolTip": "AllTablesWindow.xaml.cs",
-              "ViewState": "AgIAAMQAAAAAAAAAAAAYwOoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T15:25:04.409Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "tovary.cs",
-              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\tovary.cs",
-              "RelativeDocumentMoniker": "Models\\tovary.cs",
-              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\tovary.cs",
-              "RelativeToolTip": "Models\\tovary.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T14:47:16.597Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginWindow.xaml.cs",
-              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\LoginWindow.xaml.cs",
-              "RelativeDocumentMoniker": "LoginWindow.xaml.cs",
-              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\LoginWindow.xaml.cs",
-              "RelativeToolTip": "LoginWindow.xaml.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAqwBQAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T15:07:34.147Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "tovary_sizes.cs",
-              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\tovary_sizes.cs",
-              "RelativeDocumentMoniker": "Models\\tovary_sizes.cs",
-              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\tovary_sizes.cs",
-              "RelativeToolTip": "Models\\tovary_sizes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T11:39:21.206Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UserWindow.xaml.cs",
               "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\UserWindow.xaml.cs",
               "RelativeDocumentMoniker": "UserWindow.xaml.cs",
               "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\UserWindow.xaml.cs",
               "RelativeToolTip": "UserWindow.xaml.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAYwHkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAswKQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-22T15:23:08.828Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AppDbContext .cs",
-              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Context\\AppDbContext .cs",
-              "RelativeDocumentMoniker": "Context\\AppDbContext .cs",
-              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Context\\AppDbContext .cs",
-              "RelativeToolTip": "Context\\AppDbContext .cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T14:41:52.213Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "CheckoutWindow.xaml.cs",
               "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\CheckoutWindow.xaml.cs",
               "RelativeDocumentMoniker": "CheckoutWindow.xaml.cs",
               "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\CheckoutWindow.xaml.cs",
               "RelativeToolTip": "CheckoutWindow.xaml.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAYwGUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAYwEkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-22T16:08:38.247Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "sizes.cs",
-              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\sizes.cs",
-              "RelativeDocumentMoniker": "Models\\sizes.cs",
-              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\sizes.cs",
-              "RelativeToolTip": "Models\\sizes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "CheckoutWindow.xaml",
+              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\CheckoutWindow.xaml",
+              "RelativeDocumentMoniker": "CheckoutWindow.xaml",
+              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\CheckoutWindow.xaml",
+              "RelativeToolTip": "CheckoutWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-22T16:08:21.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CartWindow.xaml.cs",
+              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\CartWindow.xaml.cs",
+              "RelativeDocumentMoniker": "CartWindow.xaml.cs",
+              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\CartWindow.xaml.cs",
+              "RelativeToolTip": "CartWindow.xaml.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAYwDoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T15:03:11.428Z",
+              "WhenOpened": "2024-12-22T16:03:44.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CartWindow.xaml",
+              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\CartWindow.xaml",
+              "RelativeDocumentMoniker": "CartWindow.xaml",
+              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\CartWindow.xaml",
+              "RelativeToolTip": "CartWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-22T16:03:29.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginWindow.xaml.cs",
+              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\LoginWindow.xaml.cs",
+              "RelativeDocumentMoniker": "LoginWindow.xaml.cs",
+              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\LoginWindow.xaml.cs",
+              "RelativeToolTip": "LoginWindow.xaml.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAYwDwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T15:07:34.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AppDbContext .cs",
+              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Context\\AppDbContext .cs",
+              "RelativeDocumentMoniker": "Context\\AppDbContext .cs",
+              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Context\\AppDbContext .cs",
+              "RelativeToolTip": "Context\\AppDbContext .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T14:41:52.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T12:57:42.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "QuantityToBooleanConverter.cs",
+              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Converters\\QuantityToBooleanConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\QuantityToBooleanConverter.cs",
+              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Converters\\QuantityToBooleanConverter.cs",
+              "RelativeToolTip": "Converters\\QuantityToBooleanConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T23:27:03.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "StringToListConverter.cs",
+              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Converters\\StringToListConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\StringToListConverter.cs",
+              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Converters\\StringToListConverter.cs",
+              "RelativeToolTip": "Converters\\StringToListConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T21:25:25.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AdminWindow.xaml",
+              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\AdminWindow.xaml",
+              "RelativeDocumentMoniker": "AdminWindow.xaml",
+              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\AdminWindow.xaml",
+              "RelativeToolTip": "AdminWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-22T15:06:20.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "LoginWindow.xaml",
+              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\LoginWindow.xaml",
+              "RelativeToolTip": "LoginWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-22T15:07:25.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderItems.cs",
+              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\OrderItems.cs",
+              "RelativeDocumentMoniker": "Models\\OrderItems.cs",
+              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\OrderItems.cs",
+              "RelativeToolTip": "Models\\OrderItems.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T16:09:24.167Z",
               "EditorCaption": ""
             },
             {
@@ -266,31 +311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UserWindow.xaml",
-              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\UserWindow.xaml",
-              "RelativeDocumentMoniker": "UserWindow.xaml",
-              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\UserWindow.xaml",
-              "RelativeToolTip": "UserWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-22T15:22:55.517Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "QuantityToBooleanConverter.cs",
-              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Converters\\QuantityToBooleanConverter.cs",
-              "RelativeDocumentMoniker": "Converters\\QuantityToBooleanConverter.cs",
-              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Converters\\QuantityToBooleanConverter.cs",
-              "RelativeToolTip": "Converters\\QuantityToBooleanConverter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T23:27:03.292Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 26,
               "Title": "App.xaml",
               "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
@@ -302,7 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 27,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -314,67 +335,162 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UserWindow.xaml",
+              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\UserWindow.xaml",
+              "RelativeDocumentMoniker": "UserWindow.xaml",
+              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\UserWindow.xaml",
+              "RelativeToolTip": "UserWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-22T15:22:55.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AdminWindow.xaml.cs",
+              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\AdminWindow.xaml.cs",
+              "RelativeDocumentMoniker": "AdminWindow.xaml.cs",
+              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\AdminWindow.xaml.cs",
+              "RelativeToolTip": "AdminWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T15:06:31.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AllTablesWindow.xaml.cs",
+              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\AllTablesWindow.xaml.cs",
+              "RelativeDocumentMoniker": "AllTablesWindow.xaml.cs",
+              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\AllTablesWindow.xaml.cs",
+              "RelativeToolTip": "AllTablesWindow.xaml.cs",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAYwOkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T15:25:04.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Orders.cs",
+              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\Orders.cs",
+              "RelativeDocumentMoniker": "Models\\Orders.cs",
+              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\Orders.cs",
+              "RelativeToolTip": "Models\\Orders.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T15:02:22.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "AdminWindow.xaml",
-              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\AdminWindow.xaml",
-              "RelativeDocumentMoniker": "AdminWindow.xaml",
-              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\AdminWindow.xaml",
-              "RelativeToolTip": "AdminWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-22T15:06:20.981Z",
+              "Title": "admin_log.cs",
+              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\admin_log.cs",
+              "RelativeDocumentMoniker": "Models\\admin_log.cs",
+              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\admin_log.cs",
+              "RelativeToolTip": "Models\\admin_log.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T15:01:46.049Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "LoginWindow.xaml",
-              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\LoginWindow.xaml",
-              "RelativeDocumentMoniker": "LoginWindow.xaml",
-              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\LoginWindow.xaml",
-              "RelativeToolTip": "LoginWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-22T15:07:25.27Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "CheckoutWindow.xaml",
-              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\CheckoutWindow.xaml",
-              "RelativeDocumentMoniker": "CheckoutWindow.xaml",
-              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\CheckoutWindow.xaml",
-              "RelativeToolTip": "CheckoutWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-22T16:08:21.55Z",
+              "DocumentIndex": 11,
+              "Title": "admin_account.cs",
+              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\admin_account.cs",
+              "RelativeDocumentMoniker": "Models\\admin_account.cs",
+              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\admin_account.cs",
+              "RelativeToolTip": "Models\\admin_account.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T15:01:30.035Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "CartWindow.xaml",
-              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\CartWindow.xaml",
-              "RelativeDocumentMoniker": "CartWindow.xaml",
-              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\CartWindow.xaml",
-              "RelativeToolTip": "CartWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-22T16:03:29.607Z",
+              "Title": "zamovlennya.cs",
+              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\zamovlennya.cs",
+              "RelativeDocumentMoniker": "Models\\zamovlennya.cs",
+              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\zamovlennya.cs",
+              "RelativeToolTip": "Models\\zamovlennya.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T15:04:04.807Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "Users.cs",
+              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "Models\\Users.cs",
+              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\Users.cs",
+              "RelativeToolTip": "Models\\Users.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T12:57:42.582Z"
+              "WhenOpened": "2024-12-22T14:45:38.328Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 15,
+              "Title": "tovary.cs",
+              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\tovary.cs",
+              "RelativeDocumentMoniker": "Models\\tovary.cs",
+              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\tovary.cs",
+              "RelativeToolTip": "Models\\tovary.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T14:47:16.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "koshik.cs",
+              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\koshik.cs",
+              "RelativeDocumentMoniker": "Models\\koshik.cs",
+              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\koshik.cs",
+              "RelativeToolTip": "Models\\koshik.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T15:03:48.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "delivery_services.cs",
+              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\delivery_services.cs",
+              "RelativeDocumentMoniker": "Models\\delivery_services.cs",
+              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\delivery_services.cs",
+              "RelativeToolTip": "Models\\delivery_services.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T15:02:01.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "categories.cs",
+              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\categories.cs",
+              "RelativeDocumentMoniker": "Models\\categories.cs",
+              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\categories.cs",
+              "RelativeToolTip": "Models\\categories.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T14:46:57.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
@@ -383,174 +499,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-22T15:25:49.041Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Users.cs",
-              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\Users.cs",
-              "RelativeDocumentMoniker": "Models\\Users.cs",
-              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\Users.cs",
-              "RelativeToolTip": "Models\\Users.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T14:45:38.328Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "categories.cs",
-              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\categories.cs",
-              "RelativeDocumentMoniker": "Models\\categories.cs",
-              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\categories.cs",
-              "RelativeToolTip": "Models\\categories.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T14:46:57.994Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "AdminWindow.xaml.cs",
-              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\AdminWindow.xaml.cs",
-              "RelativeDocumentMoniker": "AdminWindow.xaml.cs",
-              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\AdminWindow.xaml.cs",
-              "RelativeToolTip": "AdminWindow.xaml.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAIwDIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T15:06:31.695Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "CartWindow.xaml.cs",
-              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\CartWindow.xaml.cs",
-              "RelativeDocumentMoniker": "CartWindow.xaml.cs",
-              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\CartWindow.xaml.cs",
-              "RelativeToolTip": "CartWindow.xaml.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAADwvzoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T16:03:44.958Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "koshik.cs",
-              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\koshik.cs",
-              "RelativeDocumentMoniker": "Models\\koshik.cs",
-              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\koshik.cs",
-              "RelativeToolTip": "Models\\koshik.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T15:03:48.95Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "delivery_services.cs",
-              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\delivery_services.cs",
-              "RelativeDocumentMoniker": "Models\\delivery_services.cs",
-              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\delivery_services.cs",
-              "RelativeToolTip": "Models\\delivery_services.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T15:02:01.523Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "sklad.cs",
-              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\sklad.cs",
-              "RelativeDocumentMoniker": "Models\\sklad.cs",
-              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\sklad.cs",
-              "RelativeToolTip": "Models\\sklad.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T15:03:33.942Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "admin_log.cs",
-              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\admin_log.cs",
-              "RelativeDocumentMoniker": "Models\\admin_log.cs",
-              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\admin_log.cs",
-              "RelativeToolTip": "Models\\admin_log.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T15:01:46.049Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "admin_account.cs",
-              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\admin_account.cs",
-              "RelativeDocumentMoniker": "Models\\admin_account.cs",
-              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\admin_account.cs",
-              "RelativeToolTip": "Models\\admin_account.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T15:01:30.035Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "StringToListConverter.cs",
-              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Converters\\StringToListConverter.cs",
-              "RelativeDocumentMoniker": "Converters\\StringToListConverter.cs",
-              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Converters\\StringToListConverter.cs",
-              "RelativeToolTip": "Converters\\StringToListConverter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T21:25:25.93Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Orders.cs",
-              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\Orders.cs",
-              "RelativeDocumentMoniker": "Models\\Orders.cs",
-              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\Orders.cs",
-              "RelativeToolTip": "Models\\Orders.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T15:02:22.568Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "zamovlennya.cs",
-              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\zamovlennya.cs",
-              "RelativeDocumentMoniker": "Models\\zamovlennya.cs",
-              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\zamovlennya.cs",
-              "RelativeToolTip": "Models\\zamovlennya.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T15:04:04.807Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ProductSize.cs",
-              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\ProductSize.cs",
-              "RelativeDocumentMoniker": "Models\\ProductSize.cs",
-              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\ProductSize.cs",
-              "RelativeToolTip": "Models\\ProductSize.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T21:45:28.799Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "OrderItems.cs",
-              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\OrderItems.cs",
-              "RelativeDocumentMoniker": "Models\\OrderItems.cs",
-              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\OrderItems.cs",
-              "RelativeToolTip": "Models\\OrderItems.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T16:09:24.167Z"
             }
           ]
         }

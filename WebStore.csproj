@@ -241,8 +241,6 @@
     <Compile Include="Converters\QuantityToBooleanConverter.cs" />
     <Compile Include="Models\OrderItems.cs" />
     <Compile Include="Converters\StringToListConverter.cs" />
-    <Compile Include="Models\ProductSize.cs" />
-    <Compile Include="Models\tovary_sizes.cs" />
     <Compile Include="UserWindow.xaml.cs">
       <DependentUpon>UserWindow.xaml</DependentUpon>
     </Compile>
@@ -297,8 +295,6 @@
     <Compile Include="Models\delivery_services.cs" />
     <Compile Include="Models\koshik.cs" />
     <Compile Include="Models\Orders.cs" />
-    <Compile Include="Models\sizes.cs" />
-    <Compile Include="Models\sklad.cs" />
     <Compile Include="Models\tovary.cs" />
     <Compile Include="Models\Users.cs" />
     <Compile Include="Models\zamovlennya.cs" />

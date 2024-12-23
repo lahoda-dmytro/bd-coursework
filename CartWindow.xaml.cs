@@ -10,49 +10,49 @@ namespace OnlineStoreApp
 {
     public partial class CartWindow : Window
     {
-        public ObservableCollection<tovary> Cart { get; set; }
+        private int userId;
+        private ObservableCollection<koshik> cart;
 
-        public CartWindow(ObservableCollection<tovary> cart)
+        public CartWindow(int userId, ObservableCollection<koshik> cart)
         {
             InitializeComponent();
-            Cart = cart;
-            LoadCartItems();
-            UpdateTotalPrice();
+            this.userId = userId;
+            this.cart = cart;
+            DataContext = this;
+            LoadCart();
         }
 
-        private void LoadCartItems()
+        private void LoadCart()
         {
-            CartItemsControl.Items.Clear();
-            foreach (var item in Cart)
-            {
-                CartItemsControl.Items.Add(new TextBlock
-                {
-                    Text = $"{item.name} - {item.price.ToString("C", System.Globalization.CultureInfo.CreateSpecificCulture("en-US"))}",
-                    Margin = new Thickness(0, 5, 0, 0)
-                });
-            }
-        }
-
-        private void UpdateTotalPrice()
-        {
-            TotalPriceText.Text = Cart.Sum(item => item.price).ToString("C", System.Globalization.CultureInfo.CreateSpecificCulture("en-US"));
+            CartItemsControl.ItemsSource = cart;
+            TotalPriceText.Text = cart.Sum(ci => ci.price * ci.quantity).ToString("C");
         }
 
         private void RemoveFromCart_Click(object sender, RoutedEventArgs e)
         {
-            if (sender is Button button && button.Tag is tovary selectedItem)
+            if (sender is Button button && button.Tag is koshik selectedCartItem)
             {
-                Cart.Remove(selectedItem);
-                LoadCartItems();
-                UpdateTotalPrice();
+                var existingCartItem = cart.FirstOrDefault(ci => ci.cart_id == selectedCartItem.cart_id);
+                if (existingCartItem != null)
+                {
+                    if (existingCartItem.quantity > 1)
+                    {
+                        existingCartItem.quantity -= 1; // Зменшення кількості товару
+                    }
+                    else
+                    {
+                        cart.Remove(existingCartItem);
+                    }
+                }
+                LoadCart();
             }
         }
 
         private void Checkout_Click(object sender, RoutedEventArgs e)
         {
-            var checkoutWindow = new CheckoutWindow(Cart);
+            var checkoutWindow = new CheckoutWindow(userId, cart);
             checkoutWindow.Show();
-            this.Close();
+            this.Close(); // Закриття поточного вікна після переходу на вікно CheckoutWindow
         }
     }
 }

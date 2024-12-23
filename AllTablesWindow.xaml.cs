@@ -13,7 +13,6 @@ namespace OnlineStoreApp
     {
         public ObservableCollection<Users> Users { get; set; }
         public ObservableCollection<tovary> Products { get; set; }
-        public ObservableCollection<admin_log> AdminLogs { get; set; }
         public ObservableCollection<Orders> Orders { get; set; }
         public ObservableCollection<categories> Categories { get; set; }
 
@@ -30,21 +29,20 @@ namespace OnlineStoreApp
             {
                 Users = new ObservableCollection<Users>(context.Users.ToList());
                 Products = new ObservableCollection<tovary>(context.tovary.ToList());
-                AdminLogs = new ObservableCollection<admin_log>(context.admin_log.ToList());
                 Orders = new ObservableCollection<Orders>(context.Orders
                     .Include(o => o.OrderItems)
                     .Select(o => new Orders
                     {
                         order_id = o.order_id,
                         user_id = o.user_id,
-                        delivery_service_id = o.delivery_service_id,
-                        address = o.address,
-                        phone = o.phone,
-                        email = o.email,
-                        delivery_branch = o.delivery_branch,
-                        note = o.note,
+                        address = o.address ?? string.Empty,
+                        phone = o.phone ?? string.Empty,
+                        email = o.email ?? string.Empty,
+                        delivery_branch = o.delivery_branch ?? string.Empty,
+                        note = o.note ?? string.Empty,
                         order_date = o.order_date,
                         total_price = o.total_price,
+                        status = o.status ?? string.Empty, 
                         confirmed = o.confirmed,
                         OrderItems = o.OrderItems.Select(oi => new OrderItems
                         {
@@ -59,7 +57,6 @@ namespace OnlineStoreApp
 
                 UsersDataGrid.ItemsSource = Users;
                 ProductsDataGrid.ItemsSource = Products;
-                AdminLogsDataGrid.ItemsSource = AdminLogs;
                 OrdersDataGrid.ItemsSource = Orders;
                 CategoriesDataGrid.ItemsSource = Categories;
             }
@@ -74,7 +71,11 @@ namespace OnlineStoreApp
                 photo_url = "https://example.com/photo.jpg",
                 description = "Description",
                 category_id = 1,
-                quantity = 0
+                quantity = 0,
+                size_s = 0,
+                size_m = 0,
+                size_l = 0,
+              
             };
 
             Products.Add(newProduct);
@@ -181,47 +182,60 @@ namespace OnlineStoreApp
 
         private void SaveChanges_Click(object sender, RoutedEventArgs e)
         {
-            using (var context = new AppDbContext())
+            try
             {
-                foreach (var user in Users)
+                using (var context = new AppDbContext())
                 {
-                    if (context.Users.Any(u => u.Id == user.Id))
+                    foreach (var user in Users)
                     {
-                        context.Entry(user).State = EntityState.Modified;
+                        if (context.Users.Any(u => u.id == user.id))
+                        {
+                            context.Entry(user).State = EntityState.Modified;
+                        }
+                        else
+                        {
+                            context.Users.Add(user);
+                        }
                     }
-                    else
-                    {
-                        context.Users.Add(user);
-                    }
-                }
 
-                foreach (var product in Products)
-                {
-                    if (context.tovary.Any(p => p.item_id == product.item_id))
+                    foreach (var product in Products)
                     {
-                        context.Entry(product).State = EntityState.Modified;
+                        if (context.tovary.Any(p => p.item_id == product.item_id))
+                        {
+                            context.Entry(product).State = EntityState.Modified;
+                        }
+                        else
+                        {
+                            context.tovary.Add(product);
+                        }
                     }
-                    else
-                    {
-                        context.tovary.Add(product);
-                    }
-                }
 
-                foreach (var category in Categories)
-                {
-                    if (context.categories.Any(c => c.category_id == category.category_id))
+                    foreach (var category in Categories)
                     {
-                        context.Entry(category).State = EntityState.Modified;
+                        if (context.categories.Any(c => c.category_id == category.category_id))
+                        {
+                            context.Entry(category).State = EntityState.Modified;
+                        }
+                        else
+                        {
+                            context.categories.Add(category);
+                        }
                     }
-                    else
-                    {
-                        context.categories.Add(category);
-                    }
-                }
 
-                context.SaveChanges();
-                MessageBox.Show("Changes saved to the database.");
+                    context.SaveChanges();
+                    MessageBox.Show("Changes saved to the database.");
+                }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred while saving changes: {ex.Message}");
+            }
+        }
+
+
+        private void SaveProductSizesChanges_Click(object sender, RoutedEventArgs e)
+        {
+            // Реалізуйте код для збереження змін розмірів продуктів
         }
 
         private void Logout_Click(object sender, RoutedEventArgs e)

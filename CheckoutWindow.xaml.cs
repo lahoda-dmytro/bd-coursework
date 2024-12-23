@@ -1,104 +1,73 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text.RegularExpressions;
 using System.Windows;
 using WebStore.Models;
 using WebStore;
-using System.Windows.Controls;
 
 namespace OnlineStoreApp
 {
     public partial class CheckoutWindow : Window
     {
-        public ObservableCollection<tovary> Cart { get; set; }
+        private int userId;
+        private ObservableCollection<koshik> cart;
 
-        public CheckoutWindow(ObservableCollection<tovary> cart)
+        public CheckoutWindow(int userId, ObservableCollection<koshik> cart)
         {
             InitializeComponent();
-            Cart = cart;
-            LoadOrderDetails();
-            UpdateTotalPrice();
+            this.userId = userId;
+            this.cart = cart;
+            DataContext = this;
+            LoadCart();
         }
 
-        private void LoadOrderDetails()
+        private void LoadCart()
         {
-            foreach (var item in Cart)
-            {
-                OrderItemsControl.Items.Add(new TextBlock
-                {
-                    Text = $"{item.name} - {item.price.ToString("C", System.Globalization.CultureInfo.CreateSpecificCulture("en-US"))} (x{item.quantity})",
-                    Margin = new Thickness(0, 5, 0, 0)
-                });
-            }
-        }
-
-        private void UpdateTotalPrice()
-        {
-            decimal total = Cart.Sum(item => item.price * item.quantity);
-            TotalPriceText.Text = total.ToString("C", System.Globalization.CultureInfo.CreateSpecificCulture("en-US"));
+            OrderItemsControl.ItemsSource = cart;
+            TotalPriceText.Text = cart.Sum(ci => ci.price * ci.quantity).ToString("C");
         }
 
         private void ConfirmOrder_Click(object sender, RoutedEventArgs e)
         {
-            // Валідація номеру телефону українського формату
-            if (!Regex.IsMatch(PhoneTextBox.Text, @"^\+380\d{9}$"))
-            {
-                MessageBox.Show("Невірний номер телефону. Формат: +380XXXXXXXXX", "Помилка", MessageBoxButton.OK, MessageBoxImage.Error);
-                return;
-            }
-
-            // Валідація електронної пошти
-            if (!Regex.IsMatch(EmailTextBox.Text, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
-            {
-                MessageBox.Show("Невірний формат електронної пошти.", "Помилка", MessageBoxButton.OK, MessageBoxImage.Error);
-                return;
-            }
-
             using (var context = new AppDbContext())
             {
-                var newOrder = new Orders
+                var order = new Orders
                 {
-                    user_id = 1, // Заміна на ідентифікатор авторизованого користувача
+                    user_id = userId,
+                    order_date = DateTime.Now,
+                    total_price = cart.Sum(ci => ci.price * ci.quantity),
+                    confirmed = false, // Спочатку замовлення не підтверджене
                     address = AddressTextBox.Text,
                     phone = PhoneTextBox.Text,
                     email = EmailTextBox.Text,
                     delivery_branch = DeliveryBranchTextBox.Text,
                     note = NoteTextBox.Text,
-                    order_date = DateTime.Now,
-                    total_price = Cart.Sum(item => item.price * item.quantity), // Обчислення загальної суми
-                    confirmed = false
+                    status = "Pending" // Статус замовлення як очікуване
                 };
 
-                context.Orders.Add(newOrder);
+                context.Orders.Add(order);
                 context.SaveChanges();
 
-                foreach (var item in Cart)
+                foreach (var cartItem in cart)
                 {
                     var orderItem = new OrderItems
                     {
-                        order_id = newOrder.order_id,
-                        item_id = item.item_id,
-                        quantity = item.quantity, // Використання значення quantity
-                        price = item.price
+                        order_id = order.order_id,
+                        item_id = cartItem.item_id,
+                        quantity = cartItem.quantity,
+                        price = cartItem.price,
+                        size_s = cartItem.size_selected == "S" ? cartItem.quantity : 0,
+                        size_m = cartItem.size_selected == "M" ? cartItem.quantity : 0,
+                        size_l = cartItem.size_selected == "L" ? cartItem.quantity : 0
                     };
-                    context.OrderItems.Add(orderItem);
 
-                    // Зменшення кількості товарів у базі даних
-                    var product = context.tovary.Find(item.item_id);
-                    if (product != null)
-                    {
-                        product.quantity -= item.quantity; // Зменшення кількості
-                        if (product.quantity < 0) product.quantity = 0; // Запобігання від'ємній кількості
-                    }
+                    context.OrderItems.Add(orderItem);
                 }
 
                 context.SaveChanges();
+                MessageBox.Show("Order confirmed successfully.");
+                Close(); // Закриття вікна після підтвердження замовлення
             }
-
-            MessageBox.Show("Замовлення успішно оформлено!", "Успіх", MessageBoxButton.OK, MessageBoxImage.Information);
-            this.Close();
         }
-
     }
 }

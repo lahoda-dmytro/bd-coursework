@@ -4,6 +4,7 @@
         Title="All Tables" Height="800" Width="1200" 
         WindowStartupLocation="CenterScreen">
     <Grid>
+        <Button Content="Save Product Sizes Changes" Click="SaveProductSizesChanges_Click" />
         <TabControl>
             <TabItem Header="Users">
                 <DataGrid x:Name="UsersDataGrid" AutoGenerateColumns="True" />
@@ -43,6 +44,17 @@
                         <Button Content="Add Category" Click="AddCategory_Click" Margin="5"/>
                         <Button Content="Remove Category" Click="RemoveCategory_Click" Margin="5"/>
                     </StackPanel>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Product Sizes">
+                <StackPanel>
+                    <DataGrid x:Name="ProductSizesDataGrid" AutoGenerateColumns="False" CanUserAddRows="True" CanUserDeleteRows="True">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Product ID" Binding="{Binding item_id}" IsReadOnly="True"/>
+                            <DataGridTextColumn Header="Size" Binding="{Binding size}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Button Content="Save Changes" Click="SaveProductSizesChanges_Click" HorizontalAlignment="Right" Margin="10"/>
                 </StackPanel>
             </TabItem>
         </TabControl>
