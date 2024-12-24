@@ -37,7 +37,7 @@ namespace OnlineStoreApp
                 {
                     if (existingCartItem.quantity > 1)
                     {
-                        existingCartItem.quantity -= 1; // Зменшення кількості товару
+                        existingCartItem.quantity -= 1;
                     }
                     else
                     {
@@ -52,7 +52,7 @@ namespace OnlineStoreApp
         {
             var checkoutWindow = new CheckoutWindow(userId, cart);
             checkoutWindow.Show();
-            this.Close(); // Закриття поточного вікна після переходу на вікно CheckoutWindow
+            this.Close(); 
         }
     }
 }

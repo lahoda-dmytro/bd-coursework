@@ -24,7 +24,7 @@ namespace OnlineStoreApp
 
                 if (user != null)
                 {
-                    var userWindow = new UserWindow(user.id); // Передача ID користувача
+                    var userWindow = new UserWindow(user.id); 
                     userWindow.Show();
                     this.Close();
                 }
@@ -46,7 +46,7 @@ namespace OnlineStoreApp
 
                 if (adminAccount != null)
                 {
-                    var allTablesWindow = new AllTablesWindow(); // Відкриття вікна з усіма таблицями
+                    var allTablesWindow = new AllTablesWindow(); 
                     allTablesWindow.Show();
                     this.Close();
                 }

@@ -11,16 +11,19 @@ namespace OnlineStoreApp
 {
     public partial class UserWindow : Window
     {
-        private int userId; // Поле для зберігання ID користувача
+        private int userId; 
 
         public ObservableCollection<tovary> Products { get; set; }
         public ObservableCollection<tovary> FilteredProducts { get; set; }
-        public ObservableCollection<koshik> Cart { get; set; }
+        public ObservableCollection<koshik> Cart { get; set; } = new ObservableCollection<koshik>();
+
+  
+
 
         public UserWindow(int userId)
         {
             InitializeComponent();
-            this.userId = userId; // Присвоєння ID користувача
+            this.userId = userId; 
             LoadCategories();
             LoadProducts();
             DataContext = this;
@@ -86,26 +89,42 @@ namespace OnlineStoreApp
                     return;
                 }
 
-                var existingCartItem = Cart.FirstOrDefault(ci => ci.item_id == selectedProduct.item_id && ci.size_selected == selectedProduct.SelectedSize);
+                var existingCartItem = Cart.FirstOrDefault(ci =>
+                    ci.item_id == selectedProduct.item_id &&
+                    ci.size_selected == selectedProduct.SelectedSize);
+
                 if (existingCartItem != null)
                 {
-                    existingCartItem.quantity += 1; // Збільшення кількості товару
+                    existingCartItem.quantity += 1; 
                 }
                 else
                 {
                     Cart.Add(new koshik
                     {
                         item_id = selectedProduct.item_id,
+                        name = selectedProduct.name,
                         quantity = 1,
                         price = selectedProduct.price,
                         size_selected = selectedProduct.SelectedSize
                     });
                 }
 
-                UpdateCart();
+                TotalPrice.Text = Cart.Sum(ci => ci.price * ci.quantity).ToString("C");
+
                 MessageBox.Show($"Product '{selectedProduct.name}' ({selectedProduct.SelectedSize}) added to cart.");
             }
         }
+
+
+        private void UpdateCart()
+        {
+            CartItemsControl.ItemsSource = null;
+            CartItemsControl.ItemsSource = Cart;
+
+
+            TotalPrice.Text = Cart.Sum(ci => ci.price * ci.quantity).ToString("C");
+        }
+
 
 
         private void RemoveFromCart_Click(object sender, RoutedEventArgs e)
@@ -117,7 +136,7 @@ namespace OnlineStoreApp
                 {
                     if (existingCartItem.quantity > 1)
                     {
-                        existingCartItem.quantity -= 1; // Зменшення кількості товару
+                        existingCartItem.quantity -= 1; 
                     }
                     else
                     {
@@ -128,12 +147,6 @@ namespace OnlineStoreApp
             }
         }
 
-        private void UpdateCart()
-        {
-            CartItemsControl.ItemsSource = null;
-            CartItemsControl.ItemsSource = Cart;
-            TotalPrice.Text = Cart.Sum(ci => ci.price * ci.quantity).ToString("C");
-        }
 
         private void Checkout_Click(object sender, RoutedEventArgs e)
         {

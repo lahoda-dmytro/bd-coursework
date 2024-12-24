@@ -139,7 +139,6 @@ namespace OnlineStoreApp
                     var order = context.Orders.Include(o => o.OrderItems).FirstOrDefault(o => o.order_id == selectedOrder.order_id);
                     if (order != null)
                     {
-                        // Видалення всіх пов'язаних OrderItems
                         context.OrderItems.RemoveRange(order.OrderItems);
                         context.Orders.Remove(order);
                         context.SaveChanges();
@@ -269,7 +268,6 @@ namespace OnlineStoreApp
 
         private void SaveProductSizesChanges_Click(object sender, RoutedEventArgs e)
         {
-            // Реалізуйте код для збереження змін розмірів продуктів
         }
 
         private void Logout_Click(object sender, RoutedEventArgs e)

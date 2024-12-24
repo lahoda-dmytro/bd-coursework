@@ -23,9 +23,10 @@ namespace OnlineStoreApp
 
         private void LoadCart()
         {
-            OrderItemsControl.ItemsSource = cart;
+            OrderItemsControl.ItemsSource = cart; 
             TotalPriceText.Text = cart.Sum(ci => ci.price * ci.quantity).ToString("C");
         }
+
 
         private void ConfirmOrder_Click(object sender, RoutedEventArgs e)
         {
@@ -36,13 +37,13 @@ namespace OnlineStoreApp
                     user_id = userId,
                     order_date = DateTime.Now,
                     total_price = cart.Sum(ci => ci.price * ci.quantity),
-                    confirmed = false, // Спочатку замовлення не підтверджене
+                    confirmed = false, 
                     address = AddressTextBox.Text,
                     phone = PhoneTextBox.Text,
                     email = EmailTextBox.Text,
                     delivery_branch = DeliveryBranchTextBox.Text,
                     note = NoteTextBox.Text,
-                    status = "Pending" // Статус замовлення як очікуване
+                    status = "Pending" 
                 };
 
                 context.Orders.Add(order);
@@ -66,8 +67,9 @@ namespace OnlineStoreApp
 
                 context.SaveChanges();
                 MessageBox.Show("Order confirmed successfully.");
-                Close(); // Закриття вікна після підтвердження замовлення
+                Close(); 
             }
         }
+
     }
 }

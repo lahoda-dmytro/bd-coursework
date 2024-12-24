@@ -10,7 +10,7 @@ namespace WebStore.Models
         public string username { get; set; }
         public string password { get; set; }
         public string email { get; set; }
-        public bool isAdmin { get; set; } // Поле для вказівки, чи є користувач адміністратором
+        public bool isAdmin { get; set; }
 
         public virtual ICollection<Orders> Orders { get; set; }
     }

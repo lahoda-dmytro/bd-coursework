@@ -9,6 +9,8 @@ namespace OnlineStoreApp
             InitializeComponent();
             var loginWindow = new LoginWindow();
             loginWindow.Show();
+            DataContext = this;
+
             this.Close();
         }
     }
