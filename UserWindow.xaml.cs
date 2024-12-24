@@ -153,9 +153,9 @@ namespace OnlineStoreApp
             CartItemsControl.ItemsSource = null;
             CartItemsControl.ItemsSource = Cart;
 
-
-            TotalPrice.Text = Cart.Sum(ci => ci.price * ci.quantity).ToString("C");
+            TotalPrice.Text = Cart.Sum(ci => ci.price * ci.quantity).ToString("C", System.Globalization.CultureInfo.GetCultureInfo("en-US"));
         }
+
 
 
 
@@ -163,12 +163,12 @@ namespace OnlineStoreApp
         {
             if (sender is Button button && button.Tag is koshik selectedCartItem)
             {
-                var existingCartItem = Cart.FirstOrDefault(ci => ci.cart_id == selectedCartItem.cart_id);
+                var existingCartItem = Cart.FirstOrDefault(ci => ci.item_id == selectedCartItem.item_id && ci.size_selected == selectedCartItem.size_selected);
                 if (existingCartItem != null)
                 {
                     if (existingCartItem.quantity > 1)
                     {
-                        existingCartItem.quantity -= 1; 
+                        existingCartItem.quantity -= 1;
                     }
                     else
                     {
@@ -178,6 +178,7 @@ namespace OnlineStoreApp
                 UpdateCart();
             }
         }
+
 
 
         private void Checkout_Click(object sender, RoutedEventArgs e)

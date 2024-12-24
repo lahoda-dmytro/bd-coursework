@@ -60,17 +60,28 @@
                 <ItemsControl x:Name="CartItemsControl" ItemsSource="{Binding Cart}">
                     <ItemsControl.ItemTemplate>
                         <DataTemplate>
-                            <StackPanel Orientation="Horizontal" Margin="0,5,0,5">
-                                <TextBlock Text="{Binding name}" Width="150" Foreground="#333"/>
-                                <TextBlock Text=" - " Width="10" Foreground="Gray"/>
-                                <TextBlock Text="{Binding size_selected}" Width="50" Foreground="Gray"/>
-                                <TextBlock Text="x" Width="10" Foreground="Gray"/>
-                                <TextBlock Text="{Binding quantity}" Width="50" Foreground="#333"/>
-                                <TextBlock Text="{Binding price, StringFormat={}{0:C}}" Width="100" Foreground="#333"/>
-                            </StackPanel>
+                            <Grid Margin="0,5,0,5" VerticalAlignment="Center">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="10"/>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Text="{Binding name}" Grid.Column="0" Foreground="#333"/>
+                                <TextBlock Text=" - " Grid.Column="1" Foreground="Gray"/>
+                                <TextBlock Text="{Binding size_selected}" Grid.Column="2" Foreground="Gray"/>
+                                <TextBlock Text="x" Grid.Column="3" Foreground="Gray"/>
+                                <TextBlock Text="{Binding quantity}" Grid.Column="4" Foreground="#333"/>
+                                <TextBlock Text="{Binding price, StringFormat={}{0:C}}" Grid.Column="5" Foreground="#333"/>
+                                <Button Content="Remove" Click="RemoveFromCart_Click" Tag="{Binding}" Width="100" Height="30" Background="#333" Foreground="White" BorderBrush="#333" Grid.Column="6" Margin="10,0,0,0"/>
+                            </Grid>
                         </DataTemplate>
                     </ItemsControl.ItemTemplate>
                 </ItemsControl>
+
 
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,20,0,0">
                     <TextBlock Text="Всього:" FontWeight="Bold" FontSize="16" Margin="0,0,10,0" Foreground="#333"/>

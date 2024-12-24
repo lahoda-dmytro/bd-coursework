@@ -24,9 +24,10 @@ namespace OnlineStoreApp
 
         private void LoadCart()
         {
-            OrderItemsControl.ItemsSource = cart; 
-            TotalPriceText.Text = cart.Sum(ci => ci.price * ci.quantity).ToString("C");
+            OrderItemsControl.ItemsSource = cart;
+            TotalPriceText.Text = cart.Sum(ci => ci.price * ci.quantity).ToString("C", System.Globalization.CultureInfo.GetCultureInfo("en-US"));
         }
+
 
 
         private void ConfirmOrder_Click(object sender, RoutedEventArgs e)
