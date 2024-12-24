@@ -99,6 +99,7 @@ namespace OnlineStoreApp
             }
         }
 
+
         private void RemoveProduct_Click(object sender, RoutedEventArgs e)
         {
             if (ProductsDataGrid.SelectedItem is tovary selectedProduct)
@@ -262,13 +263,44 @@ namespace OnlineStoreApp
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"An error occurred while saving changes: {ex.Message}");
+                MessageBox.Show($"An error occurred while saving changes: {ex.Message}\n\n{ex.InnerException?.Message}");
             }
         }
 
+
+
+
+
+
+
         private void SaveProductSizesChanges_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                using (var context = new AppDbContext())
+                {
+                    foreach (var productSize in ProductSizesDataGrid.ItemsSource.Cast<tovary>())
+                    {
+                        if (context.tovary.Any(p => p.item_id == productSize.item_id))
+                        {
+                            context.Entry(productSize).State = EntityState.Modified;
+                        }
+                        else
+                        {
+                            context.tovary.Add(productSize);
+                        }
+                    }
+
+                    context.SaveChanges();
+                    MessageBox.Show("Product sizes changes saved to the database.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred while saving product sizes changes: {ex.Message}");
+            }
         }
+
 
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
@@ -276,5 +308,7 @@ namespace OnlineStoreApp
             loginWindow.Show();
             this.Close();
         }
+
+
     }
 }

@@ -89,13 +89,44 @@ namespace OnlineStoreApp
                     return;
                 }
 
-                var existingCartItem = Cart.FirstOrDefault(ci =>
-                    ci.item_id == selectedProduct.item_id &&
-                    ci.size_selected == selectedProduct.SelectedSize);
+                using (var context = new AppDbContext())
+                {
+                    var stockItem = context.tovary.FirstOrDefault(p => p.item_id == selectedProduct.item_id);
 
+                    if (stockItem == null)
+                    {
+                        MessageBox.Show("The selected item is not available.");
+                        return;
+                    }
+
+                    bool outOfStock = false;
+                    switch (selectedProduct.SelectedSize)
+                    {
+                        case "S":
+                            outOfStock = stockItem.size_s < 1;
+                            break;
+                        case "M":
+                            outOfStock = stockItem.size_m < 1;
+                            break;
+                        case "L":
+                            outOfStock = stockItem.size_l < 1;
+                            break;
+                        default:
+                            MessageBox.Show("Invalid size selected.");
+                            return;
+                    }
+
+                    if (outOfStock)
+                    {
+                        MessageBox.Show("The selected size is out of stock.");
+                        return;
+                    }
+                }
+
+                var existingCartItem = Cart.FirstOrDefault(ci => ci.item_id == selectedProduct.item_id && ci.size_selected == selectedProduct.SelectedSize);
                 if (existingCartItem != null)
                 {
-                    existingCartItem.quantity += 1; 
+                    existingCartItem.quantity += 1; // Збільшення кількості товару
                 }
                 else
                 {
@@ -109,11 +140,12 @@ namespace OnlineStoreApp
                     });
                 }
 
-                TotalPrice.Text = Cart.Sum(ci => ci.price * ci.quantity).ToString("C");
-
+                UpdateCart();
                 MessageBox.Show($"Product '{selectedProduct.name}' ({selectedProduct.SelectedSize}) added to cart.");
             }
         }
+
+
 
 
         private void UpdateCart()

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Windows;
 using WebStore.Models;
 using WebStore;
+using Microsoft.EntityFrameworkCore;
 
 namespace OnlineStoreApp
 {
@@ -37,13 +38,13 @@ namespace OnlineStoreApp
                     user_id = userId,
                     order_date = DateTime.Now,
                     total_price = cart.Sum(ci => ci.price * ci.quantity),
-                    confirmed = false, 
+                    confirmed = false,
                     address = AddressTextBox.Text,
                     phone = PhoneTextBox.Text,
                     email = EmailTextBox.Text,
                     delivery_branch = DeliveryBranchTextBox.Text,
                     note = NoteTextBox.Text,
-                    status = "Pending" 
+                    status = "Pending"
                 };
 
                 context.Orders.Add(order);
@@ -62,14 +63,29 @@ namespace OnlineStoreApp
                         size_l = cartItem.size_selected == "L" ? cartItem.quantity : 0
                     };
 
+                    var product = context.tovary.FirstOrDefault(p => p.item_id == cartItem.item_id);
+                    if (product != null)
+                    {
+                        if (cartItem.size_selected == "S")
+                            product.size_s -= cartItem.quantity;
+                        if (cartItem.size_selected == "M")
+                            product.size_m -= cartItem.quantity;
+                        if (cartItem.size_selected == "L")
+                            product.size_l -= cartItem.quantity;
+
+                        product.quantity = product.size_s + product.size_m + product.size_l; // Оновлення загальної кількості
+                        context.Entry(product).State = EntityState.Modified;
+                    }
+
                     context.OrderItems.Add(orderItem);
                 }
 
                 context.SaveChanges();
                 MessageBox.Show("Order confirmed successfully.");
-                Close(); 
+                Close(); // Закриття вікна після підтвердження замовлення
             }
         }
+
 
     }
 }
