@@ -12,9 +12,8 @@ namespace WebStore
         public DbSet<Orders> Orders { get; set; }
         public DbSet<OrderItems> OrderItems { get; set; }
         public DbSet<koshik> koshik { get; set; }
-
+        public DbSet<admin_log> admin_log { get; set; }
         public DbSet<admin_account> admin_account { get; set; }
-
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -45,4 +44,6 @@ namespace WebStore
                 .HasForeignKey(t => t.category_id);
         }
     }
+
+
 }

@@ -43,6 +43,7 @@
                 <DataGrid x:Name="AdminLogsDataGrid" AutoGenerateColumns="True" Background="White" Foreground="#333"/>
             </TabItem>
 
+
             <TabItem Header="Замовлення">
                 <StackPanel>
                     <DataGrid x:Name="OrdersDataGrid" AutoGenerateColumns="False" Background="White" Foreground="#333" 

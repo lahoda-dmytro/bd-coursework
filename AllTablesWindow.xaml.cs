@@ -16,13 +16,14 @@ namespace OnlineStoreApp
         public ObservableCollection<Orders> Orders { get; set; }
         public ObservableCollection<OrderItems> OrderItems { get; set; }
         public ObservableCollection<categories> Categories { get; set; }
-
+        public ObservableCollection<admin_log> AdminLogs { get; set; }
         public AllTablesWindow()
         {
             InitializeComponent();
             LoadData();
             DataContext = this;
         }
+
 
         private void LoadData()
         {
@@ -67,13 +68,18 @@ namespace OnlineStoreApp
                         }).ToList()
                     }).ToList());
                 Categories = new ObservableCollection<categories>(context.categories.ToList());
+                AdminLogs = new ObservableCollection<admin_log>(context.admin_log.ToList());
 
                 UsersDataGrid.ItemsSource = Users;
                 ProductsDataGrid.ItemsSource = Products;
                 OrdersDataGrid.ItemsSource = Orders;
                 CategoriesDataGrid.ItemsSource = Categories;
+                AdminLogsDataGrid.ItemsSource = AdminLogs;
             }
         }
+
+
+
 
         private void AddProduct_Click(object sender, RoutedEventArgs e)
         {
@@ -98,6 +104,7 @@ namespace OnlineStoreApp
                 context.SaveChanges();
             }
         }
+
 
 
         private void RemoveProduct_Click(object sender, RoutedEventArgs e)
@@ -266,6 +273,7 @@ namespace OnlineStoreApp
                 MessageBox.Show($"An error occurred while saving changes: {ex.Message}\n\n{ex.InnerException?.Message}");
             }
         }
+
 
 
 
