@@ -126,7 +126,7 @@ namespace OnlineStoreApp
                 var existingCartItem = Cart.FirstOrDefault(ci => ci.item_id == selectedProduct.item_id && ci.size_selected == selectedProduct.SelectedSize);
                 if (existingCartItem != null)
                 {
-                    existingCartItem.quantity += 1; // Збільшення кількості товару
+                    existingCartItem.quantity += 1;
                 }
                 else
                 {
@@ -184,7 +184,7 @@ namespace OnlineStoreApp
         {
             var checkoutWindow = new CheckoutWindow(userId, Cart);
             checkoutWindow.Show();
-            this.Close(); // Закриття поточного вікна після переходу на вікно CheckoutWindow
+            this.Close(); 
         }
 
         private void SearchTextBox_TextChanged(object sender, TextChangedEventArgs e)

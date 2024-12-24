@@ -17,12 +17,27 @@ namespace OnlineStoreApp
         public ObservableCollection<OrderItems> OrderItems { get; set; }
         public ObservableCollection<categories> Categories { get; set; }
         public ObservableCollection<admin_log> AdminLogs { get; set; }
+
+
+        public int CurrentAdminId { get; set; }
+
+
+        public AllTablesWindow(int adminId)
+        {
+            InitializeComponent();
+            CurrentAdminId = adminId;
+            LoadData();
+            DataContext = this;
+        }
+
         public AllTablesWindow()
         {
             InitializeComponent();
             LoadData();
             DataContext = this;
         }
+
+
 
 
         private void LoadData()
@@ -222,10 +237,32 @@ namespace OnlineStoreApp
                         if (context.tovary.Any(p => p.item_id == product.item_id))
                         {
                             context.Entry(product).State = EntityState.Modified;
+                            if (!string.IsNullOrEmpty(product.name))
+                            {
+                                var adminLogEntry = new admin_log
+                                {
+                                    admin_id = CurrentAdminId, 
+                                    action = "Updated product: " + product.name,
+                                    change_date = DateTime.Now
+                                };
+                                context.admin_log.Add(adminLogEntry);
+                                Console.WriteLine($"Logging action: {adminLogEntry.action} by admin ID: {adminLogEntry.admin_id} on {adminLogEntry.change_date}");
+                            }
                         }
                         else
                         {
                             context.tovary.Add(product);
+                            if (!string.IsNullOrEmpty(product.name))
+                            {
+                                var adminLogEntry = new admin_log
+                                {
+                                    admin_id = CurrentAdminId, 
+                                    action = "Created new product: " + product.name,
+                                    change_date = DateTime.Now
+                                };
+                                context.admin_log.Add(adminLogEntry);
+                                Console.WriteLine($"Logging action: {adminLogEntry.action} by admin ID: {adminLogEntry.admin_id} on {adminLogEntry.change_date}");
+                            }
                         }
                     }
 
@@ -234,10 +271,32 @@ namespace OnlineStoreApp
                         if (context.categories.Any(c => c.category_id == category.category_id))
                         {
                             context.Entry(category).State = EntityState.Modified;
+                            if (!string.IsNullOrEmpty(category.name))
+                            {
+                                var adminLogEntry = new admin_log
+                                {
+                                    admin_id = CurrentAdminId, 
+                                    action = "Updated category: " + category.name,
+                                    change_date = DateTime.Now
+                                };
+                                context.admin_log.Add(adminLogEntry);
+                                Console.WriteLine($"Logging action: {adminLogEntry.action} by admin ID: {adminLogEntry.admin_id} on {adminLogEntry.change_date}");
+                            }
                         }
                         else
                         {
                             context.categories.Add(category);
+                            if (!string.IsNullOrEmpty(category.name))
+                            {
+                                var adminLogEntry = new admin_log
+                                {
+                                    admin_id = CurrentAdminId, 
+                                    action = "Created new category: " + category.name,
+                                    change_date = DateTime.Now
+                                };
+                                context.admin_log.Add(adminLogEntry);
+                                Console.WriteLine($"Logging action: {adminLogEntry.action} by admin ID: {adminLogEntry.admin_id} on {adminLogEntry.change_date}");
+                            }
                         }
                     }
 
@@ -257,10 +316,26 @@ namespace OnlineStoreApp
                                     context.OrderItems.Add(orderItem);
                                 }
                             }
+                            var adminLogEntry = new admin_log
+                            {
+                                admin_id = CurrentAdminId, 
+                                action = "Updated order: " + order.order_id,
+                                change_date = DateTime.Now
+                            };
+                            context.admin_log.Add(adminLogEntry);
+                            Console.WriteLine($"Logging action: {adminLogEntry.action} by admin ID: {adminLogEntry.admin_id} on {adminLogEntry.change_date}");
                         }
                         else
                         {
                             context.Orders.Add(order);
+                            var adminLogEntry = new admin_log
+                            {
+                                admin_id = CurrentAdminId, 
+                                action = "Created new order: " + order.order_id,
+                                change_date = DateTime.Now
+                            };
+                            context.admin_log.Add(adminLogEntry);
+                            Console.WriteLine($"Logging action: {adminLogEntry.action} by admin ID: {adminLogEntry.admin_id} on {adminLogEntry.change_date}");
                         }
                     }
 
@@ -273,8 +348,6 @@ namespace OnlineStoreApp
                 MessageBox.Show($"An error occurred while saving changes: {ex.Message}\n\n{ex.InnerException?.Message}");
             }
         }
-
-
 
 
 

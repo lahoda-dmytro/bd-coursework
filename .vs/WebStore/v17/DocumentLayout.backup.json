@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|d:\\!01 labs\\!02 course\\database_onlinestore\\webstore\\alltableswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:alltableswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -45,10 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|solutionrelative:loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{85E1C665-415F-4C1F-8E2E-AA19156AF596}|WebStore.csproj|D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -126,7 +126,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -134,32 +134,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AllTablesWindow.xaml.cs",
               "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\AllTablesWindow.xaml.cs",
               "RelativeDocumentMoniker": "AllTablesWindow.xaml.cs",
-              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\AllTablesWindow.xaml.cs*",
-              "RelativeToolTip": "AllTablesWindow.xaml.cs*",
-              "ViewState": "AgIAABIAAAAAAAAAAAAxwBMAAAAAAAAAAAAAAA==",
+              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\AllTablesWindow.xaml.cs",
+              "RelativeToolTip": "AllTablesWindow.xaml.cs",
+              "ViewState": "AgIAADMBAAAAAAAAAAAwwF8BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-22T15:25:04.409Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserWindow.xaml",
-              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\UserWindow.xaml",
-              "RelativeDocumentMoniker": "UserWindow.xaml",
-              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\UserWindow.xaml",
-              "RelativeToolTip": "UserWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-22T15:22:55.517Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AllTablesWindow.xaml",
               "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\AllTablesWindow.xaml",
               "RelativeDocumentMoniker": "AllTablesWindow.xaml",
@@ -171,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "admin_log.cs",
               "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\admin_log.cs",
               "RelativeDocumentMoniker": "Models\\admin_log.cs",
@@ -184,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "AdminWindow.xaml.cs",
               "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\AdminWindow.xaml.cs",
               "RelativeDocumentMoniker": "AdminWindow.xaml.cs",
@@ -197,20 +185,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AppDbContext .cs",
               "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Context\\AppDbContext .cs",
               "RelativeDocumentMoniker": "Context\\AppDbContext .cs",
-              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Context\\AppDbContext .cs*",
-              "RelativeToolTip": "Context\\AppDbContext .cs*",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAzwC4AAAAAAAAAAAAAAA==",
+              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Context\\AppDbContext .cs",
+              "RelativeToolTip": "Context\\AppDbContext .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-22T14:41:52.213Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
+              "Title": "LoginWindow.xaml.cs",
+              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\LoginWindow.xaml.cs",
+              "RelativeDocumentMoniker": "LoginWindow.xaml.cs",
+              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\LoginWindow.xaml.cs",
+              "RelativeToolTip": "LoginWindow.xaml.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwDAAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T15:07:34.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserWindow.xaml",
+              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\UserWindow.xaml",
+              "RelativeDocumentMoniker": "UserWindow.xaml",
+              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\UserWindow.xaml",
+              "RelativeToolTip": "UserWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-22T15:22:55.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "CartWindow.xaml.cs",
               "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\CartWindow.xaml.cs",
               "RelativeDocumentMoniker": "CartWindow.xaml.cs",
@@ -222,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "tovary.cs",
               "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\Models\\tovary.cs",
               "RelativeDocumentMoniker": "Models\\tovary.cs",
@@ -234,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "CheckoutWindow.xaml.cs",
               "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\CheckoutWindow.xaml.cs",
               "RelativeDocumentMoniker": "CheckoutWindow.xaml.cs",
@@ -246,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "UserWindow.xaml.cs",
               "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\UserWindow.xaml.cs",
               "RelativeDocumentMoniker": "UserWindow.xaml.cs",
@@ -254,12 +266,11 @@
               "RelativeToolTip": "UserWindow.xaml.cs",
               "ViewState": "AgIAAFQAAAAAAAAAAAAwwJIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T15:23:08.828Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-22T15:23:08.828Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "AdminWindow.xaml",
               "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\AdminWindow.xaml",
               "RelativeDocumentMoniker": "AdminWindow.xaml",
@@ -323,18 +334,6 @@
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-12-22T12:57:43.301Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "LoginWindow.xaml.cs",
-              "DocumentMoniker": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\LoginWindow.xaml.cs",
-              "RelativeDocumentMoniker": "LoginWindow.xaml.cs",
-              "ToolTip": "D:\\!01 labs\\!02 course\\database_onlinestore\\WebStore\\LoginWindow.xaml.cs",
-              "RelativeToolTip": "LoginWindow.xaml.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAowEYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T15:07:34.147Z"
             },
             {
               "$type": "Document",

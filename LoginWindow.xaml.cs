@@ -46,7 +46,7 @@ namespace OnlineStoreApp
 
                 if (adminAccount != null)
                 {
-                    var allTablesWindow = new AllTablesWindow();
+                    var allTablesWindow = new AllTablesWindow(adminAccount.admin_id); 
                     allTablesWindow.Show();
                     this.Close();
                 }
@@ -56,6 +56,7 @@ namespace OnlineStoreApp
                 }
             }
         }
+
 
         private void AdminModeCheckBox_Checked(object sender, RoutedEventArgs e)
         {

@@ -73,7 +73,7 @@ namespace OnlineStoreApp
                         if (cartItem.size_selected == "L")
                             product.size_l -= cartItem.quantity;
 
-                        product.quantity = product.size_s + product.size_m + product.size_l; // Оновлення загальної кількості
+                        product.quantity = product.size_s + product.size_m + product.size_l; 
                         context.Entry(product).State = EntityState.Modified;
                     }
 
@@ -82,7 +82,7 @@ namespace OnlineStoreApp
 
                 context.SaveChanges();
                 MessageBox.Show("Order confirmed successfully.");
-                Close(); // Закриття вікна після підтвердження замовлення
+                Close(); 
             }
         }
 
