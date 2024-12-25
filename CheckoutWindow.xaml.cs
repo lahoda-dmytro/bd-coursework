@@ -32,6 +32,33 @@ namespace OnlineStoreApp
 
         private void ConfirmOrder_Click(object sender, RoutedEventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(AddressTextBox.Text) ||
+                string.IsNullOrWhiteSpace(PhoneTextBox.Text) ||
+                string.IsNullOrWhiteSpace(EmailTextBox.Text) ||
+                string.IsNullOrWhiteSpace(DeliveryBranchTextBox.Text))
+            {
+                MessageBox.Show("Будь ласка, заповніть усі обов'язкові поля.", "Помилка валідації", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            if (!IsValidEmail(EmailTextBox.Text))
+            {
+                MessageBox.Show("Будь ласка, введіть коректну електронну пошту.", "Помилка валідації", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(FirstNameTextBox.Text) || string.IsNullOrWhiteSpace(LastNameTextBox.Text))
+            {
+                MessageBox.Show("Будь ласка, заповніть поле Ім'я та Прізвище.", "Помилка валідації", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            if (!IsValidPhoneNumber(PhoneTextBox.Text))
+            {
+                MessageBox.Show("Будь ласка, введіть коректний номер телефону у форматі 09XXXXXXXX або +380XXXXXXXXX.", "Помилка валідації", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
             using (var context = new AppDbContext())
             {
                 var order = new Orders
@@ -74,7 +101,7 @@ namespace OnlineStoreApp
                         if (cartItem.size_selected == "L")
                             product.size_l -= cartItem.quantity;
 
-                        product.quantity = product.size_s + product.size_m + product.size_l; 
+                        product.quantity = product.size_s + product.size_m + product.size_l;
                         context.Entry(product).State = EntityState.Modified;
                     }
 
@@ -82,10 +109,34 @@ namespace OnlineStoreApp
                 }
 
                 context.SaveChanges();
-                MessageBox.Show("Order confirmed successfully.");
-                Close(); 
+                MessageBox.Show("Замовлення успішно підтверджено.");
+                Close();
             }
         }
+
+        private bool IsValidEmail(string email)
+        {
+            try
+            {
+                var addr = new System.Net.Mail.MailAddress(email);
+                return addr.Address == email;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        private bool IsValidPhoneNumber(string phoneNumber)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(phoneNumber, @"^(\+380\d{9}|09\d{8})$"))
+            {
+                return true;
+            }
+            return false;
+        }
+
+
 
 
     }

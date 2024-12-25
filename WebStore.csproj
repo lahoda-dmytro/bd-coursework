@@ -292,7 +292,6 @@
     <Compile Include="Models\admin_account.cs" />
     <Compile Include="Models\admin_log.cs" />
     <Compile Include="Models\categories.cs" />
-    <Compile Include="Models\delivery_services.cs" />
     <Compile Include="Models\koshik.cs" />
     <Compile Include="Models\Orders.cs" />
     <Compile Include="Models\tovary.cs" />

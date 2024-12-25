@@ -8,7 +8,6 @@ namespace WebStore
         public DbSet<Users> Users { get; set; }
         public DbSet<tovary> tovary { get; set; }
         public DbSet<categories> categories { get; set; }
-        public DbSet<delivery_services> delivery_services { get; set; }
         public DbSet<Orders> Orders { get; set; }
         public DbSet<OrderItems> OrderItems { get; set; }
         public DbSet<koshik> koshik { get; set; }
