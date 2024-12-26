@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using System.Data.SqlClient;
 using WebStore;
 using WebStore.Models;
 
@@ -34,25 +35,25 @@ namespace OnlineStoreApp
         {
             using (var context = new AppDbContext())
             {
-                var categories = context.categories.ToList();
+                var categories = context.categories
+                    .FromSqlRaw("EXEC GetCategories")
+                    .ToList();
                 CategoriesComboBox.ItemsSource = categories;
                 CategoriesComboBox.DisplayMemberPath = "name";
                 CategoriesComboBox.SelectedValuePath = "category_id";
             }
         }
 
+
         private void LoadProducts(int? categoryId = null)
         {
             using (var context = new AppDbContext())
             {
-                var query = context.tovary.AsQueryable();
+                var products = context.tovary
+                    .FromSqlRaw("EXEC GetProducts @category_id", new Microsoft.Data.SqlClient.SqlParameter("@category_id", (object)categoryId ?? DBNull.Value))
+                    .ToList();
 
-                if (categoryId.HasValue)
-                {
-                    query = query.Where(t => t.category_id == categoryId.Value);
-                }
-
-                Products = new ObservableCollection<tovary>(query.ToList().Select(p => new tovary
+                Products = new ObservableCollection<tovary>(products.Select(p => new tovary
                 {
                     item_id = p.item_id,
                     name = p.name ?? "Unknown",
@@ -66,10 +67,12 @@ namespace OnlineStoreApp
                     size_l = p.size_l,
                     AvailableSizes = new ObservableCollection<string> { "S", "M", "L" }
                 }).ToList());
+
                 FilteredProducts = new ObservableCollection<tovary>(Products);
                 ProductsItemsControl.ItemsSource = FilteredProducts;
             }
         }
+
 
         private void CategoriesComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -91,32 +94,26 @@ namespace OnlineStoreApp
 
                 using (var context = new AppDbContext())
                 {
-                    var stockItem = context.tovary.FirstOrDefault(p => p.item_id == selectedProduct.item_id);
+                    var availableStock = 0;
 
-                    if (stockItem == null)
+                    using (var command = context.Database.GetDbConnection().CreateCommand())
                     {
-                        MessageBox.Show("The selected item is not available.");
-                        return;
+                        command.CommandText = "EXEC CheckStock @item_id, @size";
+                        command.Parameters.Add(new Microsoft.Data.SqlClient.SqlParameter("@item_id", selectedProduct.item_id));
+                        command.Parameters.Add(new Microsoft.Data.SqlClient.SqlParameter("@size", selectedProduct.SelectedSize));
+
+                        context.Database.OpenConnection();
+
+                        using (var result = command.ExecuteReader())
+                        {
+                            if (result.Read())
+                            {
+                                availableStock = result.GetInt32(0);
+                            }
+                        }
                     }
 
-                    bool outOfStock = false;
-                    switch (selectedProduct.SelectedSize)
-                    {
-                        case "S":
-                            outOfStock = stockItem.size_s < 1;
-                            break;
-                        case "M":
-                            outOfStock = stockItem.size_m < 1;
-                            break;
-                        case "L":
-                            outOfStock = stockItem.size_l < 1;
-                            break;
-                        default:
-                            MessageBox.Show("Invalid size selected.");
-                            return;
-                    }
-
-                    if (outOfStock)
+                    if (availableStock < 1)
                     {
                         MessageBox.Show("The selected size is out of stock.");
                         return;
@@ -144,6 +141,7 @@ namespace OnlineStoreApp
                 MessageBox.Show($"Product '{selectedProduct.name}' ({selectedProduct.SelectedSize}) added to cart.");
             }
         }
+
 
 
 

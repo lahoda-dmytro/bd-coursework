@@ -4,6 +4,7 @@ using System.Linq;
 using System.Windows;
 using WebStore.Models;
 using WebStore;
+using System.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
 namespace OnlineStoreApp
@@ -61,54 +62,30 @@ namespace OnlineStoreApp
 
             using (var context = new AppDbContext())
             {
-                var order = new Orders
+                var totalPrice = cart.Sum(ci => ci.price * ci.quantity);
+                var itemsJson = Newtonsoft.Json.JsonConvert.SerializeObject(cart.Select(ci => new
                 {
-                    user_id = userId,
-                    order_date = DateTime.Now,
-                    total_price = cart.Sum(ci => ci.price * ci.quantity),
-                    confirmed = false,
-                    address = AddressTextBox.Text,
-                    phone = PhoneTextBox.Text,
-                    email = EmailTextBox.Text,
-                    delivery_branch = DeliveryBranchTextBox.Text,
-                    note = NoteTextBox.Text,
-                    status = "Pending"
-                };
+                    item_id = ci.item_id,
+                    quantity = ci.quantity,
+                    price = ci.price,
+                    size = ci.size_selected
+                }));
 
-                context.Orders.Add(order);
-                context.SaveChanges();
+                context.Database.ExecuteSqlRaw(
+                    "EXEC CreateOrder @user_id, @address, @phone, @email, @delivery_branch, @note, @total_price, @order_date, @confirmed, @status, @items",
+                    new Microsoft.Data.SqlClient.SqlParameter("@user_id", userId),
+                    new Microsoft.Data.SqlClient.SqlParameter("@address", AddressTextBox.Text),
+                    new Microsoft.Data.SqlClient.SqlParameter("@phone", PhoneTextBox.Text),
+                    new Microsoft.Data.SqlClient.SqlParameter("@email", EmailTextBox.Text),
+                    new Microsoft.Data.SqlClient.SqlParameter("@delivery_branch", DeliveryBranchTextBox.Text),
+                    new Microsoft.Data.SqlClient.SqlParameter("@note", NoteTextBox.Text),
+                    new Microsoft.Data.SqlClient.SqlParameter("@total_price", totalPrice),
+                    new Microsoft.Data.SqlClient.SqlParameter("@order_date", DateTime.Now),
+                    new Microsoft.Data.SqlClient.SqlParameter("@confirmed", false),
+                    new Microsoft.Data.SqlClient.SqlParameter("@status", "Pending"),
+                    new Microsoft.Data.SqlClient.SqlParameter("@items", itemsJson)
+                );
 
-                foreach (var cartItem in cart)
-                {
-                    var orderItem = new OrderItems
-                    {
-                        order_id = order.order_id,
-                        item_id = cartItem.item_id,
-                        quantity = cartItem.quantity,
-                        price = cartItem.price,
-                        size_s = cartItem.size_selected == "S" ? cartItem.quantity : 0,
-                        size_m = cartItem.size_selected == "M" ? cartItem.quantity : 0,
-                        size_l = cartItem.size_selected == "L" ? cartItem.quantity : 0
-                    };
-
-                    var product = context.tovary.FirstOrDefault(p => p.item_id == cartItem.item_id);
-                    if (product != null)
-                    {
-                        if (cartItem.size_selected == "S")
-                            product.size_s -= cartItem.quantity;
-                        if (cartItem.size_selected == "M")
-                            product.size_m -= cartItem.quantity;
-                        if (cartItem.size_selected == "L")
-                            product.size_l -= cartItem.quantity;
-
-                        product.quantity = product.size_s + product.size_m + product.size_l;
-                        context.Entry(product).State = EntityState.Modified;
-                    }
-
-                    context.OrderItems.Add(orderItem);
-                }
-
-                context.SaveChanges();
                 MessageBox.Show("Замовлення успішно підтверджено.");
                 Close();
             }
@@ -135,6 +112,7 @@ namespace OnlineStoreApp
             }
             return false;
         }
+
 
 
 

@@ -104,15 +104,19 @@
 
             <TabItem Header="Розміри продуктів">
                 <StackPanel>
-                    <DataGrid x:Name="ProductSizesDataGrid" AutoGenerateColumns="False" CanUserAddRows="True" CanUserDeleteRows="True" Background="White" Foreground="#333">
+                    <DataGrid x:Name="ProductSizesDataGrid" AutoGenerateColumns="False" CanUserAddRows="True" CanUserDeleteRows="True" Background="White" Foreground="#333" Height="200">
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="Product ID" Binding="{Binding item_id}" IsReadOnly="True"/>
-                            <DataGridTextColumn Header="Size" Binding="{Binding size}"/>
+                            <DataGridTextColumn Header="Size S" Binding="{Binding size_s}"/>
+                            <DataGridTextColumn Header="Size M" Binding="{Binding size_m}"/>
+                            <DataGridTextColumn Header="Size L" Binding="{Binding size_l}"/>
                         </DataGrid.Columns>
                     </DataGrid>
                     <Button Content="Зберегти зміни" Click="SaveProductSizesChanges_Click" HorizontalAlignment="Right" Margin="10" Background="#333" Foreground="White" BorderBrush="#333"/>
                 </StackPanel>
             </TabItem>
+
+
         </TabControl>
     </Grid>
 </Window>
